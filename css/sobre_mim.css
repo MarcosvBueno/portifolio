@@ -47,7 +47,8 @@
   grid-area: skills;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  justify-items: flex-start;
+  justify-content: flex-start;
 }
 
 .skills-tittle {
@@ -59,12 +60,15 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+
+  justify-content: left;
+  flex-direction: row;
 }
 
 .skills-icon {
   width: 150px;
   height: 150px;
-  background-color: #444;
+  background-color: #478C5C;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,6 +76,9 @@
   gap: 12px;
 }
 
+.skills-icon:hover {
+  box-shadow: 5px 5px 15px #fff;
+}
 .skills-icon i {
   font-size: 3rem;
 }
