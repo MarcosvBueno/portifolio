@@ -19,9 +19,14 @@ ul{
   font-family: 'Ubuntu' ;
   font-weight: 700;
   font-size: 1.25rem;
-  color: white;
+  color: #7779;
 }
 
 .menu li:hover{ 
   border-color: yellowgreen;
+}
+
+.menu li:hover a{
+  color: white;
+  transition: 400ms ease-in-out;
 }
