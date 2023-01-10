@@ -14,7 +14,21 @@ body {
   grid-template-areas: 'content';
   font-family: 'Ubuntu', sans-serif;
   color: #fff;
-  background-color: #000;
+  background-color: #000;  
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               
+}
+
+body::-webkit-scrollbar-track {
+  background: #444;        
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: yellowgreen;    
+  border-radius: 20px;       
+  border: 2px solid #444;  
 }
 
 main {
