@@ -1,0 +1,47 @@
+.contato{
+  width: 1200px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.social-container {
+  grid-area: social;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.social{
+  text-decoration: none;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+
+.social i{
+  font-size: 2rem;
+  color: black;
+  
+}
+
+.social:hover{
+  background-color: #9562f3;
+  transition: 500ms;
+  transition-duration: 1s;
+  transform: scale(1.5) rotate(-360deg);
+}
+
+li.social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
