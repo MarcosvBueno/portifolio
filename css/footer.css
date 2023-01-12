@@ -1,0 +1,13 @@
+.copy-name{
+  margin-left: 6px;
+}
+
+.copy-name:hover {	
+  color: yellowgreen;
+  transition-duration: 1s;
+}
+
+hr{
+ width: 100%;
+border: 1px solid #fff;
+}

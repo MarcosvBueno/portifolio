@@ -27,13 +27,11 @@ showTest(span1, text1, interval);
 showTest(h1_name, text2, interval2);
 showTest(span2, text3, interval3);
 
-const data = docuemnt.querySelector('#dataAtual');
-
-const now = new Date();
-const year = now.getFullYear();
+const yearToday = document.querySelector('#dataAtual');
 
 showTime = () => {
-  data.innerHTML = `${year}`;
+  const date = new Date();
+  yearToday.innerHTML = "todos os direitos reservados " + date.getFullYear() + " | desenvolvido por ";
 };
-document.write('hoje é dia');
+
 showTime();
