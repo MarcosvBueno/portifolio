@@ -1,11 +1,11 @@
-.home{
+.home {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../img/background-menu.png);
+  background-image: url(./img/background-menu.png);
   box-shadow: inset 0px -40px 40px #000;
 }
 .profile {
