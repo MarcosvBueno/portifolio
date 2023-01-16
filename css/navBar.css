@@ -1,5 +1,3 @@
-
-
 ul{
   width: 100%;
   display: flex;
@@ -27,6 +25,6 @@ ul{
 }
 
 .menu li:hover a{
-  color: white;
+  color: #fff;
   transition: 400ms ease-in-out;
 }

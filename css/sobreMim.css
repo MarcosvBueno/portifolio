@@ -16,11 +16,13 @@
   grid-area: tittle;
   font-size: 220px;
   text-align: center;
-  background: linear-gradient(#444, #000);
+  background: linear-gradient(var(--gradient-color), var(--second-color-gradient));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
+
+
 
 .description {
   grid-area: description;
@@ -68,7 +70,7 @@
 .skills-icon {
   width: 150px;
   height: 150px;
-  background-color: #478C5C;
+  background-color: var(--skills-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,7 +79,7 @@
 }
 
 .skills-icon:hover {
-  box-shadow: 5px 5px 20px #fff;
+  box-shadow: 5px 5px 20px var(--deafault-color);
 }
 .skills-icon i {
   font-size: 3rem;

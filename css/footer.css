@@ -1,13 +1,20 @@
-.copy-name{
+.copy-name {
   margin-left: 6px;
 }
 
-.copy-name:hover {	
+.copy-name:hover {
   color: yellowgreen;
   transition-duration: 1s;
 }
 
-hr{
- width: 100%;
-border: 1px solid #fff;
+hr {
+  width: 100%;
+  border: 1px solid var(--deafault-color);
+}
+
+input[type=checkbox]  {
+  display: flex;
+  width: 100%;
+  margin-top: 10rem;
+  cursor: pointer;
 }
