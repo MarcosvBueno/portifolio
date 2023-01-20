@@ -40,6 +40,6 @@ showTime();
 const $html = document.querySelector('html');
 const checkbox = document.getElementById('switch');
 
-checkbox.addEventListener('change', function(){
+checkbox.addEventListener('click', function darkMode(){
   $html.classList.toggle('dark-mode') 
 });

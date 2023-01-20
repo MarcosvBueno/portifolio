@@ -1,19 +1,27 @@
 :root {
-  --color-main: yellowgreen;
-  --gradient-color: #444;
-  --second-color-gradient: #000;
+  --body-color: #000;
+  --tittle-gradient-color: #444;
+  --tittle-second-color-gradient: #000;
+  --text-about-me: #fff;
   --social-hover: #9562f3;
   --skills-color: #478c5c;
-  --deafault-color: #fff;
+  --shadow-skills: #fff;
+  --social-color: #000;
+  --background-social: #fff;  
+  --footer-color: #fff;
+  
 }
 
 .dark-mode:root {
-  --color-main: #fff;
-  --gradient-color: #fff;
-  --second-color-gradient: #fff;
+  --body-color: #fff;
+  --tittle-gradient-color: #444;
+  --tittle-second-color-gradient: #000;
+  --text-about-me: #000;
   --social-hover: #fff;
-  --skills-color: #fff;
-  --deafault-color: #fff;
+  --shadow-skills: #000;
+  --footer-color: #000;
+  --social-color: #fff;
+  --background-social: #000;  
 }
 
 * {
@@ -32,7 +40,7 @@ body {
   grid-template-areas: 'content';
   font-family: 'Ubuntu', sans-serif;
   color: var(--deafault-color);
-  background-color: #000;
+  background-color: var(--body-color);
 }
 
 body::-webkit-scrollbar {
@@ -40,13 +48,13 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--gradient-color);
+  background: var(--tittle-gradient-color);
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: var(--color-main);
   border-radius: 20px;
-  border: 2px solid var(--gradient-color);
+  border: 2px solid var(--tittle-gradient-color);
 }
 
 main {

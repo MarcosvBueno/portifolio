@@ -17,7 +17,7 @@
 
 .social{
   text-decoration: none;
-  background-color: var(--deafault-color);
+  background-color: var(--background-social);
   display: flex;
   align-items: center;
   width: 64px;
@@ -28,7 +28,8 @@
 
 .social i{
   font-size: 2rem;
-  color: black;
+  color: var(--social-color);
+  
   
 }
 
