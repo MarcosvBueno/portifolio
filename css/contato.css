@@ -1,11 +1,11 @@
 .contato{
   width: 1200px;
-  height: 100vh;
+  height: 650px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .social-container {
