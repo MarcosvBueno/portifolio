@@ -35,7 +35,10 @@ const yearToday = document.querySelector('#dataAtual');
 
 showTime = () => {
   const date = new Date();
-  yearToday.innerHTML = "todos os direitos reservados " + date.getFullYear() + " | desenvolvido por ";
+  yearToday.innerHTML =
+    'todos os direitos reservados ' +
+    date.getFullYear() +
+    ' | ';
 };
 
 showTime();
@@ -45,8 +48,8 @@ showTime();
 const $html = document.querySelector('html');
 const checkbox = document.getElementById('switch');
 
-checkbox.addEventListener('click', function darkMode(){
-  $html.classList.toggle('dark-mode') 
+checkbox.addEventListener('click', function darkMode() {
+  $html.classList.toggle('dark-mode');
 });
 
 // automação para cards slider dos projetos
@@ -56,12 +59,28 @@ document.getElementById('radio1').checked = true;
 
 setInterval(function () {
   nextImage();
-}, 5000)
+}, 5000);
 
 function nextImage() {
   count++;
-  if(count>4 ){
+  if (count > 5) {
     count = 1;
   }
-  document.getElementById('radio'+ count).checked = true;
+  document.getElementById('radio' + count).checked = true;
+}
+
+// menu mobile
+
+function showMenu() {
+  let menuMobile = document.querySelector('.mobile-menu');
+
+  if (menuMobile.classList.contains('open')) {
+    menuMobile.classList.remove('open');
+
+    document.querySelector('.icon').src = 'img/menu_white_36dp.svg';
+  } else {
+    menuMobile.classList.add('open');
+
+    document.querySelector('.icon').src = 'img/close_white_36dp.svg';
+  }
 }

@@ -9,6 +9,7 @@
   --social-color: #000;
   --background-social: #fff;  
   --footer-color: #fff;
+  --button-color: transparent;
   
 }
 
@@ -21,7 +22,8 @@
   --shadow-skills: #000;
   --footer-color: #000;
   --social-color: #fff;
-  --background-social: #000;  
+  --background-social: #000;
+  --button-color: #000;
 }
 
 * {

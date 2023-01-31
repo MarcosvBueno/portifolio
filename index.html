@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/contato.css">
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <script
       src="https://kit.fontawesome.com/0efc108669.js"
       crossorigin="anonymous"
@@ -41,7 +42,27 @@
             <a href="#contatos" class="contatos">Contato &#128222</a>
           </li>
         </ul>
+        <div class="mobile-menu-icon">
+          <button onclick="showMenu()"><img class="icon" src="./img/menu_white_36dp.svg" alt=""></button>
+              
+        </div>
       </nav>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="#sobre" class="nav-link">Sobre Mim</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projetos" class="nav-link">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contatos" class="nav-link">Contato</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="home" id="home">
@@ -192,7 +213,7 @@
 
   </section>
   <div class="container-button">
-    <button id="switch"> 💡
+    <button class="button-dark-mode" id="switch"> 💡
     </button>
   </div>
   <br/>

@@ -144,6 +144,6 @@
   background-color: #fff;
 }
 
-#radio5:checked ~.navigation-auto.auto-btn5 {
+#radio5:checked ~ .navigation-auto .auto-btn5 {
   background-color: #fff;
 }
