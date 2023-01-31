@@ -28,6 +28,10 @@
     display: none;
   }
 
+  nav{
+    background-color: transparent ;
+  }
+
   .mobile-menu-icon{
     display: flex;
     justify-content: end;
@@ -40,6 +44,8 @@
     border-radius: 30px;
     cursor: pointer;
     padding: 3px;
+    position: fixed;
+    z-index: 3;
   
   }
   
@@ -55,15 +61,17 @@
     text-align: center;
     justify-content: center;
     padding-bottom: 1rem;
+    cursor: pointer;
   }
 
   .mobile-menu li {
     font-weight: bold;
     font-size: 1.2rem;
+    
   }
 
   .mobile-menu a {
-    
+    cursor: pointer;
     text-decoration: none; 
     color: var(--text-about-me);
   }
@@ -73,10 +81,15 @@
     
     padding-top: 1.2rem;
   }
+
   .open{
-    display: flex;
-    
+    margin-top: 240px;
+    display: block;
+    position: fixed;
+    z-index: 2; 
+    opacity: 70%;
   }
+
   .home{
     display: flex;
     align-items: center;
@@ -174,6 +187,10 @@
     margin-left: 2px;
     width: 100%;
     font-size: 1rem;
+  }
+
+  .back-button{
+    top: 700px;
   }
 
 }

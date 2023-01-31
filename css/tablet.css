@@ -5,8 +5,6 @@
     margin: 0;    
   }
 
-  
-
   body {
     width: 100%;
     max-width: 960px;
@@ -23,6 +21,7 @@
     justify-content: space-between;
     align-items: center;
   }
+  
 
   .home {
     display: flex;
@@ -78,6 +77,10 @@
     font-size: 1.5rem;
   }
 
+  .back-button{
+    top: 1020px;
+    z-index: 10;
+  }
 
 
  
