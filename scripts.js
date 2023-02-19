@@ -1,3 +1,42 @@
+//animações da pagina utilizando biblioteca ScrollReveal
+
+window.sr = ScrollReveal({reset : true});
+
+sr.reveal('.section-tittle', { delay: 200, duration: 2000, easing: 'cubic-bezier(0.5, 0, 0, 1)', scale: 0.8 });
+sr.reveal('.description-tittle', {origin: 'left',
+distance: '200px',
+duration: 1000,
+easing: 'cubic-bezier(0.5, 0, 0, 1)',
+opacity: 0
+});
+sr.reveal('.skills-tittle', {origin: 'right',
+distance: '200px',
+duration: 1000,
+easing: 'cubic-bezier(0.5, 0, 0, 1)',
+opacity: 0
+});
+
+sr.reveal('.description',{origin: 'bottom',
+distance: '100px',
+duration: 1000,
+easing: 'cubic-bezier(0.5, 0, 0, 1)',
+opacity: 0
+});
+sr.reveal('.skills',{origin: 'bottom',
+distance: '100px',
+duration: 1000,
+easing: 'cubic-bezier(0.5, 0, 0, 1)',
+opacity: 0
+});
+sr.reveal('.slider',{ delay: 200, duration: 1000, easing: 'cubic-bezier(0.5, 0, 0, 1)', scale: 0.8 });
+sr.reveal('.social',{origin: 'left',
+distance: '500px',
+duration: 1500,
+easing: 'cubic-bezier(0.5, 0, 0, 1)',
+opacity: 0
+});
+sr.reveal();
+
 //animação de texto
 
 const span1 = document.querySelector('#span1');
@@ -84,3 +123,15 @@ function showMenu() {
     document.querySelector('.icon').src = 'img/close_white_36dp.svg';
   }
 }
+
+//
+
+window.addEventListener('scroll', () => {
+  let btnBack = document.querySelector('.back-button')
+
+    if(window.scrollY > 500){
+      btnBack.classList.remove('visibility');
+    } else if(window.scrollY < 500){
+      btnBack.classList.add('visibility');
+    }
+});

@@ -31,6 +31,7 @@
   padding: 0;
   margin: 0;
   font-family: 'Ubuntu';
+  
 }
 
 html {
@@ -41,7 +42,7 @@ body {
   display: grid;
   grid-template-areas: 'content';
   font-family: 'Ubuntu', sans-serif;
-  color: var(--deafault-color);
+  color: var(--body-color);
   background-color: var(--body-color);
 }
 
@@ -65,6 +66,7 @@ main {
   flex-direction: column;
   align-items: center;
 }
+
 header {
   grid-area: content;
   z-index: 1000;

@@ -24,6 +24,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  visibility: hidden;
 }
 
 .description {

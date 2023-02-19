@@ -37,3 +37,7 @@
   color: yellowgreen;
   transition: 0.8s;
 }
+
+.visibility{
+  display: none;
+}
